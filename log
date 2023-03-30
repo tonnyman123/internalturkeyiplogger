@@ -1,0 +1,16 @@
+oldhook = hookfunction(hookfunction, function(self,...)
+    if self == game.HttpGet then
+        ratbreaking()
+   return 
+    end
+return oldhook(self,...)
+end)
+
+oldhook = hookfunction(setclipboard,function(self,...)
+   if string.find(self,"discord") or string.find(self,"github") then
+   return oldhook("https://discord.com/invite/simulator")
+   end
+   return oldhook(self,...)
+end)
+
+
