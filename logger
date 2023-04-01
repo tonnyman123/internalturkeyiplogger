@@ -1,8 +1,0 @@
-
-oldhook = hookfunction(hookfunction, function(self,...)
-    if self == game.HttpGet then
-   return 
-    end
-return oldhook(self,...)
-end)
-
