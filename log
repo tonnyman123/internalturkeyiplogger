@@ -10,7 +10,7 @@ oldhook = hookfunction(setclipboard,function(self)
    if string.find(self,"discord") or string.find(self,"github") then
    return oldhook("https://discord.com/invite/simulator")
    end
-   return oldhook(self,...)
+   return oldhook(self)
 end)
 
 
