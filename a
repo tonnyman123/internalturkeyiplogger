@@ -1,0 +1,16 @@
+
+
+if not isfile("key2.txt") then
+    writefile("key2.txt","lunarhubnicebye")
+end
+
+
+local httpGet
+httpGet = hookfunction(game.HttpGet, function(self, url, ...)
+    if url:find("lunarhub") then
+        warn("it is I, the nuking, i love nuking")
+        return '{"_id":"642c250c288e4671430decbe","Username":"Saedao","UserId":"191187017","HardwareId":"nil","isElite":true,"isBanned":false,"__v":0}'
+    end
+    return httpGet(self,url,...)
+end)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/vwSaraa/LunarHub/main/mm2"))()
