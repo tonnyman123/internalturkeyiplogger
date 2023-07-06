@@ -1,0 +1,7 @@
+
+if not isfile("key2.txt") then
+    writefile("key2.txt","lunarhubnicebye")
+end
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/vwSaraa/LunarHub/main/mm2"))()
